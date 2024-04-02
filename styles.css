@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+#pokeShare {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative; 
+}
+
+#pokeName {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#pokeSubmit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pokeSubmit:hover {
+    background-color: #45a049;
+}
+
+
+#suggestions {
+    position: absolute;
+    width: calc(100% - 22px);
+    max-width: 250px; /* Establecemos el ancho máximo para evitar que sea demasiado ancho */
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Centramos horizontalmente */
+    left: 0; /* Alineamos con el borde izquierdo del contenedor principal */
+    right: 0; /* Alineamos con el borde derecho del contenedor principal */
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestion:hover {
+    background-color: #f0f0f0;
+}
+
+#pokeInfo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pokeText {
+    font-size: 24px;
+    color: #333;
+}
+
+#pokeImage {
+    max-width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.errorMessage {
+    color: red;
+    font-weight: bold;
+    text-align: center; /* Centrar el texto */
+}
